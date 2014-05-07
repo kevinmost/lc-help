@@ -10,19 +10,47 @@
 </head>
 
 <body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">LC Survey Database Manual</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Guides <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="addevent.html">Input an event into the DB</a></li>
+                            <li><a href="sendevent.html">Send inputted events to professors</a></li>
+                            <li><a href="newprof.html">Add and remove professors</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
         <div class="container">
             <h1>LC Survey Database Manual</h1>
-            <h2>This help document will serve as a guide for navigating the LC Survey database.</h2>
-            <h3>The purpose of the LC Survey database is to give users an easy way to enter and manage student and professor survey data from events. A program included alongside the database will send out these surveys.</h3>
+            <h2>This help document will serve as a guide for navigating the LC Survey database. All links in text body will show an accompanying screenshot showing the action when clicked.</h2>
+            <h3>The purpose of the LC Survey database is to give PALs an easy way to enter and manage student and professor survey data from events. A program included alongside the database will send out these surveys.</h3>
 
             <p class="lead">All work should be done in the folder on Dropbox that contains the database. To get to this folder: </p>
             
             <ol>
-                <li>Double-click the Dropbox icon in the lower-right corner of the screen to open your Dropbox folder</li>
-                <li>Double-click "LC-data"</li>
-                <li>Double-click "Surveys"</li>
+                <li><a class="popup-img" href="imgs/open-dropbox.png">Double-click the Dropbox icon in the lower-right corner of the screen to open your Dropbox folder</a></li>
+                <li><a class="popup-img" href="imgs/open-lc-data-pals.png">Double-click "LC-data"</a></li>
+                <li><a class="popup-img" href="imgs/open-surveys.png">Double-click "Surveys"</a></li>
             </ol>
 
             <p class="lead">Here is a description of each file and folder you will find in here:</p>
@@ -34,34 +62,32 @@
                 <kbd>surveys.accdb</kbd> The database that <strong>you, the user</strong> will enter data into
                 <kbd>template.xls</kbd> The Excel template file. Do not modify this!
             </pre>
+
+            <h2> Requirements:</h2>
+            <p class="lead">Your computer needs to have the following software installed for this to work</p>
+            <ol>
+                <li>Windows XP bare minimum (Win 7 or 8 preferred)</li>
+                <li><a href="http://www.dropbox.com">Dropbox (contains all of the data), signed into the stjlearningcommunities@gmail.com account</a></li>
+                <li><a href="https://www.java.com/en/download/">Java 7 or higher (for the sender program)</a></li>
+                <li>Office 2010 or later, including Microsoft Access (for the database)</li>
+            </ol>
         </div>
     </div>
 
-    <!-- Example row of columns -->
-    <div class="container">
-        <p class="lead">Learn to:</p>
-        <div class="btn-group" style="width:100%">
-            <button type="button" class="btn btn-danger">Input an event into the DB</button>
-            <button type="button" class="btn btn-danger">Send inputted events to professors as Excel spreadsheets</button> 
-            <button type="button" class="btn btn-danger">Prepare the DB for a new semester</button>
-            <button type="button" class="btn btn-danger">Add and remove professors</button>
-        </div>
 
-        <hr />
-        
-        <h2>Heading</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-     </div>
-    
-    <hr>
-    <footer>
-        <p class="lead">Problems? Email kevin.most11@stjohns.edu</p>
-    </footer>
+    <!--Modals -->
+    <div class="modal" id="open-dropbox" tabindex="-1" role="dialog">
+        <div class="modal-header"></div>
+        <div class="modal-body">
+            <img src="imgs/open-dropbox.png" />
+        </div>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Latest compiled and minified Bootstrap JavaScript -->
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <script src="scripts.js"></script>
 </body>
 </html>

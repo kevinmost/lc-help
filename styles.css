@@ -1,0 +1,14 @@
+.modal-img {
+	max-width: 80vw;
+	max-height: 80vh;
+}
+
+.popover {
+	top: 0px !important;
+	left: 0px !important;
+}
+
+.hover-img {
+	max-height: 500px;
+	max-width: 500px;
+}
